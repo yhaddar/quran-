@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Noto+Nastaliq+Urdu&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-1: hsl(0, 0%, 91%);
+  --clr-primary-2: hsl(0, 0%, 0%);
+  --clr-primary-3: hsl(0, 0%, 83%);
+  --clr-primary-4: hsl(0, 0%, 83%);
+  --clr-primary-5: hsl(0, 1%, 26%);
+  --font-primary-1: "Roboto", sans-serif;
+  --font-primary-2: "Cairo", sans-serif;
+  --font-primary-3: "Noto Nastaliq Urdu", serif;
+}
+
+body {
+  background-color: var(--clr-primary-1);
+}
+
+.Player .content {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Player .content .Flex {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.Player .content .Flex .theme, .Player .content .Flex .menu {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--clr-primary-2);
+}
+.Player .content .Flex .theme:active, .Player .content .Flex .menu:active {
+  transform: scale(0.98);
+}
+.Player .content .Flex .theme ion-icon, .Player .content .Flex .menu ion-icon {
+  width: 27px;
+  height: 27px;
+  margin-left: 9px;
+  margin-top: 8px;
+}
+.Player .content .Flex .Text .text {
+  font-size: 27px;
+  font-style: normal;
+  font-family: var(--font-primary-3);
+}
+.Player .content .Flex .menu {
+  margin-right: 10px;
+}
+.Player .content .img_player {
+  width: 100%;
+  height: 251px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.Player .content .img_player .img {
+  width: 173px;
+  height: 173px;
+  margin-top: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--clr-primary-2);
+  -webkit-animation: retation 12s linear infinite;
+          animation: retation 12s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+@-webkit-keyframes retation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes retation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Player .content .playlist_menu {
+  width: 100%;
+  height: 100%;
+  background: red;
+  position: absolute;
+  z-index: 1;
+}
+.Player .content .playlist_menu .list {
+  width: 100%;
+  display: flex;
+}
+.Player .content .playlist_menu .list .title_playlist {
+  width: 100%;
+}
+.Player .content .Text_player {
+  text-align: center;
+}
+.Player .content .Text_player .title1, .Player .content .Text_player .title2 span, .Player .content .Text_player .title2 {
+  font-size: 20px;
+  font-family: var(--font-primary-1);
+  font-weight: bold;
+  color: var(--clr-primary-2);
+  margin-top: 20px;
+  font-family: var(--font-primary-2);
+}
+.Player .content .Text_player .title2 {
+  font-weight: 100;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.Player .content .Text_player .title2 span {
+  font-family: var(--font-primary-2);
+  font-size: 18px;
+  font-weight: 100;
+}
+.Player .content .numbers {
+  width: 100%;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 82px;
+}
+.Player .content .numbers .number1, .Player .content .numbers .number2 {
+  color: black;
+  font-size: 15px;
+  font-family: var(--font-primary-1);
+  margin-left: 10px;
+}
+.Player .content .numbers .number2 {
+  margin-right: 10px;
+}
+.Player .content .input_player {
+  width: 100%;
+  height: 10px;
+  margin-top: 0;
+  background: var(--clr-primary-4);
+  padding-top: 3px;
+}
+.Player .content .input_player .volume {
+  width: 0%;
+  height: 4px;
+  background: var(--clr-primary-2);
+  border-radius: 2px;
+}
+.Player .content .button_player {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 96px;
+  margin-top: 20px;
+}
+.Player .content .button_player .button1, .Player .content .button_player .button3, .Player .content .button_player .button2 {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 7px;
+  box-shadow: var(--box-shadow);
+  margin-top: 20px;
+  border: 1px solid var(--clr-primary-2);
+}
+.Player .content .button_player .button1:active, .Player .content .button_player .button3:active, .Player .content .button_player .button2:active {
+  transform: scale(0.98);
+}
+.Player .content .button_player .button1 ion-icon, .Player .content .button_player .button3 ion-icon, .Player .content .button_player .button2 ion-icon {
+  width: 27px;
+  height: 27px;
+  margin-left: 9px;
+  margin-top: 8px;
+}/*# sourceMappingURL=style.css.map */
